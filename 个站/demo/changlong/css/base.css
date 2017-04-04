@@ -1,0 +1,171 @@
+/* 
+* @Author: anchen
+* @Date:   2016-08-26 17:34:27
+* @Last Modified by:   anchen
+* @Last Modified time: 2016-09-13 21:00:54
+*/
+@charset "utf-8";
+/* 禁用iPhone中Safari的字号自动调整 */
+html {
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+}
+/* 去除iPhone中默认的input样式 */
+input[type="submit"],
+
+input[type="reset"],
+
+input[type="button"],
+
+input{-webkit-appearance:none; resize: none;}
+/* 取消链接高亮  */
+body,div,ul,li,ol,h1,h2,h3,h4,h5,h6,input,textarea,select,p,dl,dt,dd,a,img,button,form,table,th,tr,td,tbody,article, 
+aside, details,figcaption,figure,footer,header,hgroup, menu,nav,section{ -webkit-tap-highlight-color:rgba(0, 0, 0, 0); }
+/* 设置HTML5元素为块 */
+article, aside, details,figcaption,figure,footer,header,hgroup, menu,nav,section {
+display: block;
+}
+/* 图片自适应 */
+img {vertical-align: top;
+max-width: 100%;
+height: auto;
+width:auto\9; /* ie8 */
+-ms-interpolation-mode:bicubic;/*为了照顾ie图片缩放失真*/
+}
+/* 初始化 */
+body,div,ul,li,ol,h1,h2,h3,h4,h5,h6,input,textarea,select,p,dl,dt,dd,a,img,button,form,table,th,tr,td,tbody,article, 
+aside, details,figcaption,figure,footer,header,hgroup, menu,nav,section{margin:0; padding:0; border:none;}
+body{font: normal 14px/1.5 Tahoma,"Lucida Grande",Verdana,"Microsoft Yahei",STXihei,hei;}
+em,i{font-style:normal;}
+strong{font-weight: normal;}
+.clearfix:after{content:""; display:block; visibility:hidden; height:0; clear:both;}
+a{text-decoration:none; color:#969696; font-family: '宋体',Microsoft YaHei,Tahoma,Arial,sans-serif;}
+
+ul,ol{list-style:none;}
+h1, h2, h3, h4, h5, h6{ font-size:100%; font-family: Microsoft YaHei;}
+img{border: none;vertical-align: top;}
+
+
+/*公共开始header*/
+.header {
+  height: 80px;
+  border-top: 2px solid #72479d;
+  position: relative;
+}
+.header .logo {
+  width: 265px;
+  height: 80px;
+  padding: 20px 10px;
+  position: absolute;
+  z-index: 1;
+}
+.header .logo img {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  margin-top: -40px;
+}
+.header ul {
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  left: 290px;
+}
+.header ul li {
+  float: left;
+  position: relative;
+}
+.header ul li a {
+  width: 120px;
+  height: 48px;
+  font-size: 14px;
+  color: #666666;
+  text-align: center;
+  display: block;
+  background: url(../images/nav-gap.png) no-repeat right center;
+  padding-top: 30px;
+}
+.header ul li:hover {
+  background-color: #6a428e ;
+  color: #fff;
+}
+.header ul li a:hover {
+  color: #fff;
+  background-image: url(../images/nav-bg.png);
+}
+
+/*公共开始footer*/
+
+.footer {
+  height: 150px;
+  background: #3e2749;
+  padding: 30px 0 0 322px;
+  color: #fff;
+  box-sizing: border-box;
+}
+.footer .footer-ct {
+  width: 450px;
+  position: relative;
+  float: left;
+}
+.footer .footer-ct ul {
+  width: 440px;
+  overflow: hidden;
+  padding: 0 0 10px;
+  color: #fff;
+}
+.footer .footer-ct ul li {
+  float: left;
+  padding: 5px 3px;
+}
+.footer .footer-ct ul li a {
+  font-size: 14px;
+  color: #fff;
+}
+.footer .footer-ct h4 {
+  height: 25px;
+  font-size: 14px;
+  font-weight: normal;
+}
+.footer .footer-ct h4 span {
+  font-size: 25px;
+}
+.footer .footer-ct p {
+  color: #a975f5;
+  font-size: 12px;
+  padding: 20px 0 0;
+}
+.footer .footer-ct div {
+  width: 100px;
+  height: 27px;
+  position: absolute;
+  right: 40px;
+  top: 45px;
+  line-height: 27px;
+}
+.footer .footer-ct div a {
+  display: inline-block;
+  width: 27px;
+  height: 27px;
+  padding-left: 10px;
+}
+.footer .footer-rt {
+  width: 520px;
+  height: 140px;
+  display: inline-block;
+  padding-top: 10px;
+}
+.footer .footer-rt div {
+  float: left;
+}
+.footer .footer-rt div p {
+  line-height: 40px;
+  text-align: center;
+}
+.footer .footer-rt div:nth-of-type(1) {
+  width: 100px;
+  height: 120px;
+  padding: 0 70px 0 120px;
+}
+
+

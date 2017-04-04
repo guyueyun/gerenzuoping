@@ -1,0 +1,120 @@
+/* 
+* @Author: anchen
+* @Date:   2016-08-22 17:00:06
+* @Last Modified by:   anchen
+* @Last Modified time: 2016-08-24 16:19:59
+*/
+@charset "utf-8";
+/* 禁用iPhone中Safari的字号自动调整 */
+html {
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+}
+/* 去除iPhone中默认的input样式 */
+input[type="submit"],
+
+input[type="reset"],
+
+input[type="button"],
+
+input{-webkit-appearance:none; resize: none;}
+/* 取消链接高亮  */
+body,div,ul,li,ol,h1,h2,h3,h4,h5,h6,input,textarea,select,p,dl,dt,dd,a,img,button,form,table,th,tr,td,tbody,article, 
+aside, details,figcaption,figure,footer,header,hgroup, menu,nav,section{ -webkit-tap-highlight-color:rgba(0, 0, 0, 0); }
+/* 设置HTML5元素为块 */
+article, aside, details,figcaption,figure,footer,header,hgroup, menu,nav,section {
+display: block;
+}
+/* 图片自适应 */
+img {
+max-width: 100%;
+height: auto;
+width:auto\9; /* ie8 */
+-ms-interpolation-mode:bicubic;/*为了照顾ie图片缩放失真*/
+}
+/* 初始化 */
+body,div,ul,li,ol,h1,h2,h3,h4,h5,h6,input,textarea,select,p,dl,dt,dd,a,img,button,form,table,th,tr,td,tbody,article, 
+aside, details,figcaption,figure,footer,header,hgroup, menu,nav,section{margin:0; padding:0; border:none;}
+body{font: normal 14px/1.5 Tahoma,"Lucida Grande",Verdana,"Microsoft Yahei",STXihei,hei;}
+em,i{font-style:normal;}
+strong{font-weight: normal;}
+.clearfix:after{content:""; display:block; visibility:hidden; height:0; clear:both;}
+a{text-decoration:none; color:#969696; font-family: '宋体',Microsoft YaHei,Tahoma,Arial,sans-serif;}
+a:hover{ text-decoration:none;}
+ul,ol{list-style:none;}
+h1, h2, h3, h4, h5, h6{ font-size:100%; font-family: Microsoft YaHei;}
+img{border: none;}
+
+/*-------------------------------------------------*/
+body{background-color: #f2f2f2;overflow-x: hidden;}
+@font-face {font-family: 'iconfont';
+    src: url('../font/iconfont.eot'); /* IE9*/
+    src: url('../font/iconfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('../font/iconfont.woff') format('woff'), /* chrome、firefox */
+    url('../font/iconfont.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+    url('../font/iconfont.svg#../font/iconfont') format('svg'); /* iOS 4.1- */
+}
+
+.iconfont:before{
+    font-family:"iconfont" !important;
+    font-style:normal;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-stroke-width: 0.2px;
+    -moz-osx-font-smoothing: grayscale;}
+
+.icon-sousuo:before { content: "\e604"; }
+.icon-sousuo1:before { content: "\f00ae"; }
+.icon-sousuo2:before { content: "\f002d"; }
+.icon-sousuo3:before { content: "\3434"; }
+.icon-11:before { content: "\e606"; }
+.icon-sousuo4:before { content: "\343e"; }
+.icon-sousuo5:before { content: "\e639"; }
+.icon-sousuo6:before { content: "\e6ab"; }
+.icon-sousuo7:before { content: "\e6b9"; }
+
+
+
+.search{height:45px;border-top: 1px solid #ccc;border-bottom: 1px solid #ccc;box-sizing: border-box;background-color: #f5f5f5;padding:7px 50px 0 8px;position:fixed;top:0;left:0;width: 100%;z-index: 1;}
+.search-txt{height:30px;border: 1px solid #696969;border-radius: 5px;box-shadow:0 2px 7px #ccc;box-sizing: border-box;background-color: #fff;font-size: 12px;color:#696969;line-height: 28px;}
+.search-txt .icon-sousuo:before{margin-top: -3px;margin-left: 7px;margin-right:3px;vertical-align: middle;display:inline-block; }
+.search .logo{width:43px;height: 43px;position: absolute;top:5px;right:6px;color:#000;font-size: 12px;color:#099fde;}
+.search .logo span{position: absolute;bottom:4px;left:12px;}
+.search .logo:before { content:""; width:23px;height:23px;display:block; background: url(../img/un_ico_home_v66.png) no-repeat -59px -194px;background-size: 104px auto;position: absolute;right:4px;top:-2px;}
+
+/* 本例子css -------------------------------------- */
+    .focus{height:100%;  margin:0 auto; position:relative; overflow:hidden;padding-top: 45px;}
+    .focus .hd{position:absolute;bottom:10px;left:50%;margin-left: -50px; z-index:1;overflow:hidden; }
+    .focus .hd ul{line-height: 30px; }
+    .focus .hd li{width:8px;height:8px;background-color:rgba(255, 255, 255, 0.6);border: 1px solid #fff;border-radius: 50%;float: left;margin:0 5px;}
+    .focus .hd li.on{background-color: #f60;}
+    .focus .bd{ position:relative; z-index:0; }
+    .focus .bd li img{ width:100%;}
+    .focus .bd li a{ -webkit-tap-highlight-color:rgba(0, 0, 0, 0); /* 取消链接高亮 */ }
+
+nav{padding:5px 8px 0;}
+nav ul{padding-left: 104px;position: relative;margin-bottom: 10px;}
+nav li{float:left;width:50%;background-color: #ff697a;height:41px;line-height: 41px;text-align: center;color:#fff;border-left: 1px solid #f2f2f2;border-bottom: 1px solid #f2f2f2;box-sizing: border-box;}
+nav li:nth-of-type(1){width:104px;height:82px;position: absolute;top:0;left:0;border-radius: 5px 0 0 5px;}
+nav li:nth-of-type(3){border-radius:0 5px 0 0;}
+nav li:nth-of-type(5){border-radius: 0 0 5px;}
+nav li:nth-of-type(1):after{content:"";display:block;width:40px;height:34px;background:url(../img/un_ico_home_v66.png) no-repeat 0 -130px;margin:0 auto;background-size:104px auto;}
+/*2楼*/
+nav ul:nth-of-type(2) li{background-color: #099fde;}
+nav ul:nth-of-type(2) li:nth-of-type(1):after{content:"";width:42px;height:24px;background-position:-50px -122px ;}
+/*3楼*/
+nav ul:nth-of-type(3) li{background-color:#64b807;}
+nav ul:nth-of-type(3) li:nth-of-type(1):after{content:"";width:36px;height:42px;background-position:0px -180px ;margin-top: -5px;}
+/*4楼*/
+nav ul:nth-of-type(4) li{background-color: #fc9627;}
+nav ul:nth-of-type(4) li:nth-of-type(1):after{content:"";width:63px;height:35px;background-position:12px -130px ;}
+
+.footer{margin:10px auto;padding:0 8px;}
+.footer-banner{display:table;border: 1px solid #d8d8d8;}
+.footer-banner li{display:table-cell;width:50%;border-right: 1px solid #d8d8d8;background-color: #fff;}
+.footer-banner li img{display:block;}
+.footer-nav{height:50px;border-top: 1px solid #d8d8d8;border-bottom: 1px solid #d8d8d8;margin-top: 10px;display:flex;}
+.footer-nav li{flex:1;text-align: center;font-size: 12px;color:#333;background-color: #fff;}
+.footer-nav li:before{content:"";width:33px;height:25px;background:url(../img/un_ico_home_v66.png) no-repeat -54px -148px;margin:0 auto;background-size:104px auto;display:block;}
+.footer-nav li:nth-of-type(2):before{background-position:-50px -169px ;}
+.footer-nav li:nth-of-type(3):before{background-position:-52px -304px;}
+.footer-last{line-height: 30px;text-align: center;font-size: 12px;color:#333;}

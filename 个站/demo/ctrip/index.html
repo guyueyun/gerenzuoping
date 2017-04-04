@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes" /><!-- 删除苹果默认的工具栏和菜单栏 -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" /><!-- 设置苹果工具栏颜色 -->
+    <meta name="format-detection" content="telphone=no, email=no" /><!-- 忽略页面中的数字识别为电话，忽略email识别 -->
+    <!-- 启用360浏览器的极速模式(webkit) -->
+    <meta name="renderer" content="webkit">
+    <!-- 避免IE使用兼容模式 -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- 针对手持设备优化，主要是针对一些老的不识别viewport的浏览器，比如黑莓 -->
+    <meta name="HandheldFriendly" content="true">
+    <!-- 微软的老式浏览器 -->
+    <meta name="MobileOptimized" content="320">
+    <!-- uc强制竖屏 -->
+    <meta name="screen-orientation" content="portrait">
+    <!-- QQ强制竖屏 -->
+    <meta name="x5-orientation" content="portrait">
+    <!-- UC强制全屏 -->
+    <meta name="full-screen" content="yes">
+    <!-- QQ强制全屏 -->
+    <meta name="x5-fullscreen" content="true">
+    <!-- UC应用模式 -->
+    <meta name="browsermode" content="application">
+    <!-- QQ应用模式 -->
+    <meta name="x5-page-mode" content="app">
+    <!-- windows phone 点击无高光 -->
+    <meta name="msapplication-tap-highlight" content="no">
+    <!-- 适应移动端end -->
+    <title>携程在手，说走就跑！</title>
+    <link rel="stylesheet" type="text/css" href="css/index.css" />
+</head>
+<script type="text/javascript" src="js/TouchSlide.1.1.js"></script>
+<body>
+    <header class="search">
+        <div class="search-txt">
+            <span class="icon-sousuo iconfont">搜索:目的地/酒店/景点/航班号</span>
+        </div>
+        <a href="#" class="logo">
+            <span>我 的</span>
+        </a>
+    </header>
+    <!-- 本例主要代码 Start ================================ -->
+    <figure id="focus" class="focus">
+        <div class="hd">
+            <ul>
+            </ul>
+        </div>
+        <div class="bd">
+            <ul>
+                <li><a href="#"><img src="img/01.jpg"  /></a></li>
+                <li><a href="#"><img src="img/02.jpg"  /></a></li>
+                <li><a href="#"><img src="img/03.jpg"  /></a></li>
+                <li><a href="#"><img src="img/04.jpg"  /></a></li>
+                <li><a href="#"><img src="img/05.jpg"  /></a></li>
+            </ul>
+        </div>
+    </figure>
+    <script type="text/javascript">
+            TouchSlide({ 
+                slideCell:"#focus",
+                titCell:".hd ul", //开启自动分页 autoPage:true ，此时设置 titCell 为导航元素包裹层
+                mainCell:".bd ul", 
+                effect:"leftLoop", 
+                autoPlay:true,//自动播放
+                autoPage:true //自动分页
+            });
+    </script>
+    <nav>
+        <ul class="clearfix">
+            <li>酒店</li>
+            <li>海外酒店</li>
+            <li>团购</li>
+            <li>特价酒店</li>
+            <li>民宿·客栈</li>
+        </ul>
+        <ul class="clearfix">
+            <li>酒店</li>
+            <li>海外酒店</li>
+            <li>团购</li>
+            <li>特价酒店</li>
+            <li>民宿·客栈</li>
+        </ul>
+        <ul class="clearfix">
+            <li>酒店</li>
+            <li>海外酒店</li>
+            <li>团购</li>
+            <li>特价酒店</li>
+            <li>民宿·客栈</li>
+        </ul>
+        <ul class="clearfix">
+            <li>酒店</li>
+            <li>海外酒店</li>
+            <li>团购</li>
+            <li>特价酒店</li>
+            <li>民宿·客栈</li>
+        </ul>
+    </nav>
+    <footer class="footer">
+        <figure>
+            <ul class="footer-banner">
+                <li><img src="img/pic01.png" alt="" /></li>
+                <li><img src="img/pic02.png" alt="" /></li>
+            </ul>
+        </figure>
+        <div >
+            <ul class="footer-nav">
+                <li><a href="123456789">电话预订</a></li>
+                <li><a href="#">下载客户端</a></li>
+                <li><a href="#">我 的</a></li>
+            </ul>
+        </div>
+        <div class="footer-last">
+            <p><a href="#">网站地图</a><a href="#">|ENGLISH｜</a><a href="#">电脑版</a></p>
+            <p>?2015携程旅行</p>
+        </div>
+    </footer>
+</body>
+</html>

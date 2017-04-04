@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes" /><!-- 删除苹果默认的工具栏和菜单栏 -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" /><!-- 设置苹果工具栏颜色 -->
+    <meta name="format-detection" content="telphone=no, email=no" /><!-- 忽略页面中的数字识别为电话，忽略email识别 -->
+    <!-- 启用360浏览器的极速模式(webkit) -->
+    <meta name="renderer" content="webkit">
+    <!-- 避免IE使用兼容模式 -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- 针对手持设备优化，主要是针对一些老的不识别viewport的浏览器，比如黑莓 -->
+    <meta name="HandheldFriendly" content="true">
+    <!-- 微软的老式浏览器 -->
+    <meta name="MobileOptimized" content="320">
+    <!-- uc强制竖屏 -->
+    <meta name="screen-orientation" content="portrait">
+    <!-- QQ强制竖屏 -->
+    <meta name="x5-orientation" content="portrait">
+    <!-- UC强制全屏 -->
+    <meta name="full-screen" content="yes">
+    <!-- QQ强制全屏 -->
+    <meta name="x5-fullscreen" content="true">
+    <!-- UC应用模式 -->
+    <meta name="browsermode" content="application">
+    <!-- QQ应用模式 -->
+    <meta name="x5-page-mode" content="app">
+    <!-- windows phone 点击无高光 -->
+    <meta name="msapplication-tap-highlight" content="no">
+    <!-- 适应移动端end -->
+    <title>美食天下</title>
+    <link rel="stylesheet" type="text/css" href="css/base.css" />
+    <link rel="stylesheet" type="text/css" href="css/index.css" />
+    <script src="js/TouchSlide.1.1.js" type="text/javascript"></script>
+</head>
+
+<body>
+    <header class="header">
+        <ul>
+            <li><a href="">首页</a></li>
+            <li><a href="">菜谱</a></li>
+            <li><a href="">食材</a></li>
+            <li><a href="">魔方</a></li>
+            <li><a href="">话题</a></li>
+        </ul>
+        <a href="#"><img src="img/s_t.png" alt="" /></a>
+    </header>
+
+    <!-- download -->
+    <div class="download">
+        <a href="#">
+            <img src="img/msc.gif" alt="" />
+        </a>
+    </div>
+
+    <!-- user -->
+    <div class="user">
+        <a href="#">
+            <img src="img/logo_big.png" alt="" />
+        </a>
+        <div class="user-right">
+            <a href="#">登陆</a>
+            <a href="#">注册</a>
+        </div>
+    </div>
+
+    <!-- search -->
+    <div class="search">
+        <div>
+            <input type="text" value="你想吃什么了？" />
+            <a href="#" class="btn"></a>
+        </div>
+    </div>
+
+    <!-- banner -->
+    <div id="slideBox" class="slideBox">
+
+        <div class="bd">
+            <ul>
+                <li>
+                    <a class="pic" href="#"><img src="img/banner1.jpg" /></a>
+                    <a class="tit" href="#">五花肉的N种销魂吃法五花肉的N种销魂吃法</a>
+                </li>
+                <li>
+                    <a class="pic" href="#"><img src="img/banner2.jpg"/></a>
+                    <a class="tit" href="#">情定今生的美食情定今生的美食</a>
+                </li>
+                <li>
+                    <a class="pic" href="#"><img src="img/banner3.jpg"/></a>
+                    <a class="tit" href="#">干煸菜，一个字“香”！干煸菜，一个字“香”！</a>
+                </li>
+                <li>
+                    <a class="pic" href="#"><img src="img/banner4.jpg"/></a>
+                    <a class="tit" href="#">少女的酥胸-马卡龙少女的酥胸-马卡龙</a>
+                </li>
+                <li>
+                    <a class="pic" href="#"><img src="img/banner5.jpg"/></a>
+                    <a class="tit" href="#">立冬养生立冬养生</a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="hd">
+            <ul></ul>
+        </div>
+    </div>
+    <script type="text/javascript">
+        TouchSlide({ 
+            slideCell:"#slideBox",
+            titCell:".hd ul", //开启自动分页 autoPage:true ，此时设置 titCell 为导航元素包裹层
+            mainCell:".bd ul", 
+            effect:"leftLoop", 
+            autoPage:true,//自动分页
+            // autoPlay:true //自动播放
+        });
+    </script>
+
+    <!-- 分类 -->
+    <div class="classWrap">
+        <ul class="classUp">
+            <li><a href="list.html">最新</a></li>
+            <li><a href="list.html">最热</a></li>
+            <li><a href="list.html">食疗</a></li>
+            <li><a href="list.html">快手菜</a></li>
+        </ul>
+        <ul class="classDown">
+            <li><a href="list.html">热菜</a></li>
+            <li><a href="list.html">凉菜</a></li>
+            <li><a href="list.html">汤羹大全</a></li>
+            <li><a href="list.html">菜篮子</a></li>
+        </ul>
+    </div>
+
+    <!-- 查看所有分类 -->
+    <div class='allClass'>
+        <a href="#">查看所有分类</a>
+    </div>
+
+    <div class="recommand">今日菜谱推荐</div>
+
+    <!-- caipu -->
+    <section class='caipu'>
+        <ul>
+            <li>
+                <a href="#" title="裱花生日蛋糕">
+                 <div class="pic">
+                    <img src="img/list-pic1.jpg" alt="" />
+                 </div>
+                 <div class="detail">
+                     <h3>裱花生日蛋糕</h3>
+                     <p>原料：各种色素(可忽略)、无盐黄油(裱花奶油)、鸡蛋清 (裱花奶油)、白砂糖 (裱花奶油)、凉开水 (裱花奶油)、蓝风车淡奶油(糕体抹面)、细砂糖(糕体抹面)、鸡蛋清(裱花奶油)、白砂糖(裱花奶油)、凉开水(裱花奶油)。</p>
+                     <span>1小时前 </span>
+                 </div> 
+                </a>
+            </li>
+            <li>
+                <a href="#" title="六寸海棉蛋糕">
+                 <div class="pic">
+                    <img src="img/list-pic2.jpg" alt="" />
+                 </div>
+                 <div class="detail">
+                     <h3>六寸海棉蛋糕</h3>
+                     <p>原料：鸡蛋、低粉、牛奶、白砂糖、柠檬汁或白醋、玉米油。</p>
+                     <span>1小时前 </span>
+                 </div> 
+                </a>
+            </li>
+            <li>
+                <a href="#" title="椰蓉手撕面包">
+                 <div class="pic">
+                    <img src="img/list-pic3.jpg" alt="" />
+                 </div>
+                 <div class="detail">
+                     <h3>椰蓉手撕面包</h3>
+                     <p>原料：金像高筋粉（中种）、酵母（中种）、牛奶（中种）、鸡蛋（中种）、盐（中种）、淡奶油（主面团）、细砂糖（主面团）、金像高筋粉（主面团）、黄油（主面团）、椰蓉（陷料）、黄油（陷料）、细砂糖（陷料）、全蛋液（陷料）、全蛋液（抹面用）。</p>
+                     <span>1小时前 </span>
+                 </div> 
+                </a>
+            </li>
+            <li>
+                <a href="#" title="花生曲奇-ACA">
+                 <div class="pic">
+                    <img src="img/list-pic4.jpg" alt="" />
+                 </div>
+                 <div class="detail">
+                     <h3>花生曲奇-ACA ATO-TM33HT烤仆小智电子式烤箱试用</h3>
+                     <p>原料：低粉、黄油、糖粉、鸡蛋、泡打粉、花生碎。</p>
+                     <span>3小时前 </span>
+                 </div> 
+                </a>
+            </li>
+        </ul>
+    </section>
+
+    <!-- 查看更多菜谱 -->
+    <div class='moreCai'>
+        <a href="#">查看更多新菜谱</a>
+    </div>
+
+    <!-- 饮食健康 -->
+    <div class="healthy">饮食健康</div>
+
+    <!-- 健康饮食详情 -->
+    <section class='healthy-lt'>
+        <ul>
+            <li>
+                <a href="#" >十二种有毒家常菜</a>
+            </li>
+            <li>
+                <a href="#" >别再吃这六种早餐了</a>
+            </li>
+            <li>
+                <a href="#" >男人吃什么肉最补肾养精</a>
+            </li>
+            <li>
+                <a href="#" >14种越吃越瘦的食物</a>
+            </li>
+            <li>
+                <a href="#" >蔬菜十大致命错误吃法</a>
+            </li>
+        </ul>
+    </section>
+
+    <!-- 查看更多健康知识 -->
+    <div class='moreHealth'>
+        <a href="#">查看更多健康知识</a>
+    </div>
+
+    <!-- 热门专题 -->
+    <div class="zhuanti">热门专题</div>
+    
+    <div class="ZT-details">
+        <ul>
+            <li><a href="">主食</a></li>
+            <li><a href="">小吃</a></li>
+            <li><a href="">川菜</a></li>
+            <li><a href="">烘焙</a></li>
+            <li><a href="">泡酱腌菜</a></li>
+            <li><a href="">火锅</a></li>
+            <li><a href="">西餐</a></li>
+            <li><a href="">甜品</a></li>
+        </ul>
+    </div>
+
+    <!-- 常做的食材 -->
+    <div class="shicai">常做的食材</div>
+    
+    <div class="SC-details">
+        <ul>
+            <li><a href="">排骨</a></li>
+            <li><a href="">猪肉</a></li>
+            <li><a href="">猪蹄</a></li>
+            <li><a href="">鸡肉</a></li>
+            <li><a href="">茄子</a></li>
+            <li><a href="">土豆</a></li>
+            <li><a href="">豆腐</a></li>
+            <li><a href="">虾</a></li>
+        </ul>
+    </div>
+
+ <!-- 更多热门食材 -->
+    <div class='moreSC'>
+        <a href="#">更多热门食材</a>
+    </div>
+
+        <!-- 最受欢迎的家常菜 -->
+    <div class="jiachangcai">最受欢迎的家常菜</div>
+    
+    <div class="JCC-details">
+        <ul>
+            <li><a href="">红烧肉</a></li>
+            <li><a href="">鱼香肉丝</a></li>
+            <li><a href="">可乐鸡翅</a></li>
+            <li><a href="">糖醋排骨</a></li>
+            <li><a href="">红烧茄子</a></li>
+            <li><a href="">红烧排骨</a></li>
+            <li><a href="">宫保鸡丁</a></li>
+            <li><a href="">水煮肉片</a></li>
+        </ul>
+    </div>
+
+     <!-- 更多热门菜谱 -->
+    <div class='moreCP'>
+        <a href="#">更多热门菜谱</a>
+    </div>
+
+    <div class="msc3">
+        <a href="#">
+            <img src="img/msc3.3.jpg" alt="" />
+        </a>
+    </div>
+
+
+
+
+<!-- footer -->
+    <footer class='footer' >
+        <div>
+            <a href="#">回首页</a>
+            <span>┊</span>
+            <a href="#">回顶部</a>
+        </div>
+        <div>
+            <a href="#">搜索</a>
+            <a href="#">留言</a>
+            <a href="#">手机客户端<em>HOT</em></a>
+        </div>
+    </footer>
+
+
+
+
+
+</body>
+</html>

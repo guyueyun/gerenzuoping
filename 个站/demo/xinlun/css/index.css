@@ -1,0 +1,53 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*banner部分开始*/
+.banner{height: 380px;position: relative;overflow: hidden;cursor:pointer;position: relative;z-index: 1;}
+.banner ul{width: 500%;position: absolute;left:0;top:0;}
+.banner ul li{width: 20%;height: 380px;float:left;background:url(../picture/banner1.jpg) no-repeat center top;}
+
+.banner .w{width:1200px;height:100%;margin:0 auto;position:relative;z-index: 1;}
+.banner ol{position:absolute;right: 10px;bottom: 10px;z-index: 2;}
+.banner ol li{width: 40px;height: 4px;float:left;margin-left: 7px;background: #F4F4F4;overflow:hidden;}
+.banner ol li.current{background: #414141;}
+
+
+
+/*main1*/
+.main{width:1000px;height:606px;padding-top:38px;margin:0 auto;}
+.main1{height:297px;}
+.main1-left{width:478px;height:261px;float:left;}
+/*main1右上*/
+.main1-left-up{width:478px;height:24px;border-bottom:1px solid #c5c9c8;}
+.main1-left-up span{background:url(../img/news-bg.png) no-repeat left center;float:left;padding-left:24px;font-family:"微软雅黑";font-size:16px;color:#006C6A;}
+.main1-left-up .more{width:24px;height:24px;line-height:24px;background:url(../img/more-bg.png) no-repeat right center;float:right;padding-right:13px;font-size:12px;color:#006666;}
+.main1-left-up .more:hover{text-decoration:none;}
+/*main1右中*/
+.main1-left-center{height:135px;padding:20px 0 0 3px;}
+.main1-left-center dt{width:195px;height:113px;float:left;}
+.main1-left-center dd{width:270px;float:right;}
+.main1-left-center p{font-family:"微软雅黑";font-size:14px;height:32px;}
+.main1-left-center .detail{height:60px;display:block;line-height:22px;}
+.main1-left-center .date{color:#999;}
+/*main1右下*/
+.main1-left-down li{height:23px;}
+.main1-left-down a{float:left;padding-left:13px;background:url(../img/main1-left-li-bg.png) no-repeat left center;}
+.main1-left-down span{float:right;}
+
+/*main1右边*/
+.main1-right{width:478px;height:261px;float:right;}
+.main1-right-bd{width:475px;height:144px;}
+.main1-right-bd p{line-height:21px;padding-top:14px;}
+
+
+/*main2*/
+.main2{height:311px;}
+.main2 .main1-left-up{width:auto;}
+.main2-down{padding-top:20px;}
+.main2-down-left{width:382px;height:264px;float:left;display:inline;}
+.main2-down-left h4{color:#006666;height:25px;}
+.main2-down-left p{padding:14px 0 24px;line-height:25px;}
+.main2-down-center{width:252px;height:264px;float:left;margin:0 40px 0 60px;display:inline;}
+.main2-down-center p{padding-top:20px;text-align:center;}
+.workplace{padding-top:20px;text-align:center; }
+.main2-down-right{width:235px;height:264px;float:left;display:inline;}
